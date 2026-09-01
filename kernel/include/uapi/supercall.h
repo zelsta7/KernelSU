@@ -179,4 +179,7 @@ struct ksu_get_sulog_fd_cmd {
 #define KSU_IOCTL_GET_SULOG_FD _IOW('K', 20, struct ksu_get_sulog_fd_cmd)
 #define KSU_IOCTL_DISABLE_ESCAPE_TO_ROOT _IO('K', 21)
 
+#define KSU_IOCTL_GET_HOOK_MODE _IOC(_IOC_READ, 'K', 98, 0)
+#define KSU_IOCTL_GET_VERSION_TAG _IOC(_IOC_READ, 'K', 99, 0)
+
 #endif
