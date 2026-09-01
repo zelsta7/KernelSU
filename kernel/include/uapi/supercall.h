@@ -120,6 +120,14 @@ struct ksu_manage_mark_cmd {
 	__u32 result; /* Output: for get operation - mark status or reg_count */
 };
 
+struct ksu_get_hook_mode_cmd {
+	char mode[16];
+};
+
+struct ksu_get_version_tag_cmd {
+	char tag[32];
+};
+
 #define KSU_MARK_GET 1
 #define KSU_MARK_MARK 2
 #define KSU_MARK_UNMARK 3
